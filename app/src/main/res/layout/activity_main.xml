@@ -36,12 +36,15 @@
             android:textSize="30sp"></TextView>
     </LinearLayout>
     <Button
+        android:id="@+id/button1"
         android:shadowRadius="10"
         android:layout_marginTop="270dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Slide into the main menu">
+        android:text="Slide into the main menu"
+        android:textStyle="bold"
+        >
     </Button>
     <TextView
         android:background="@color/teal_200"
