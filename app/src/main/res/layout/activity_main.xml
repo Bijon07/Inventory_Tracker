@@ -46,18 +46,18 @@
         android:textStyle="bold"
         >
     </Button>
+
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:background="@color/teal_200"
         android:backgroundTint="@color/lightorange"
         android:shadowRadius="10"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_gravity="center"
         android:text="Keep track of all your items easily\nFast service, less mistake"
         android:textAlignment="center"
-        android:textSize="25sp">
-    </TextView>
+        android:textColor="@color/black"
+        android:textSize="25sp"></TextView>
 
 </LinearLayout>
