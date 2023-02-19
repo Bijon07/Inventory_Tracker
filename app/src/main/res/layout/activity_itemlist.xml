@@ -7,13 +7,12 @@
     tools:context=".item_list"
     android:background="@color/white"
     >
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="-82dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/txt"
