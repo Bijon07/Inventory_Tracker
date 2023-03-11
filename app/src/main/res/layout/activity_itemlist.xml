@@ -69,7 +69,7 @@
             android:layout_below="@+id/quantity"
             android:layout_marginLeft="10dp"
             android:hint="Supplier's name"
-            android:inputType="number"
+            android:inputType="textPersonName"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="24dp" />
@@ -87,6 +87,7 @@
             android:textSize="24dp" />
 
         <Button
+            android:id="@+id/btnadd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/scontact"
