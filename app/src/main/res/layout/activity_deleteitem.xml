@@ -1,19 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".delete_item"
-    android:gravity="center"
+    tools:context=".update_list"
     >
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Delete Item"
-        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Please Enter the details below"
+        android:textAlignment="center"
+        android:textColor="#E63520EF"
+        android:textSize="25sp"
         android:textStyle="bold"
-        android:textSize="40sp"
-        />
+        tools:ignore="MissingConstraints"
+        android:paddingTop="20dp"/>
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/pname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Product's name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pname"
+            android:layout_margin="30dp"
+            android:width="200dp"
+            android:height="60dp"
+            android:text="delete from list"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
