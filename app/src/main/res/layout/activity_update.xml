@@ -61,12 +61,35 @@
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="24dp" />
+        <EditText
+            android:id="@+id/sname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quantity"
+            android:layout_marginLeft="10dp"
+            android:hint="Supplier's name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/scontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sname"
+            android:layout_marginLeft="10dp"
+            android:hint="Supplier's Contact"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24dp" />
 
         <Button
             android:id="@+id/btnupdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/quantity"
+            android:layout_below="@+id/scontact"
             android:layout_margin="30dp"
             android:width="200dp"
             android:height="60dp"

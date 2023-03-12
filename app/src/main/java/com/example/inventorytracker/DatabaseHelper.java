@@ -52,4 +52,16 @@ public class DatabaseHelper extends SQLiteOpenHelper
         else
             return  true;
     }
+
+    public boolean updateData(String name, String price, String quantity,String supplier_name, String supplier_contact){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Col_1,name);
+        contentValues.put(Col_2,price);
+        contentValues.put(Col_3,quantity);
+        contentValues.put(Col_4,supplier_name);
+        contentValues.put(Col_5,supplier_contact);
+        db.update(Table_Name, contentValues,"Name = ?",new String[]{name}); //update
+        return true;
+    }
 }
