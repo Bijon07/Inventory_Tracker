@@ -42,9 +42,20 @@ public class update_list extends AppCompatActivity
                         if(isUpdate == true)
                         {
                             Toast.makeText(update_list.this,"Data Updated",Toast.LENGTH_LONG).show();
+                            pname.setText("");
+                            price.setText("");
+                            quantity.setText("");
+                            sname.setText("");
+                            scontact.setText("");
                         }
-                        else
-                            Toast.makeText(update_list.this,"Data Not Updated",Toast.LENGTH_LONG).show();
+                        else {
+                            Toast.makeText(update_list.this, "Data Not Updated", Toast.LENGTH_LONG).show();
+                            pname.setText("");
+                            price.setText("");
+                            quantity.setText("");
+                            sname.setText("");
+                            scontact.setText("");
+                        }
                     }
                 }
         );

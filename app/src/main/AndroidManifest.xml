@@ -20,20 +20,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".search_item"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".sell_item"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".delete_item"
             android:exported="false">
             <meta-data

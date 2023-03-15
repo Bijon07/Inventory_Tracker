@@ -39,10 +39,20 @@ public class item_list extends AppCompatActivity
                                 scontact.getText().toString());
                         if(isInserted){
                             Toast.makeText(item_list.this,"Data inserted",Toast.LENGTH_LONG).show();
+                            pname.setText("");
+                            price.setText("");
+                            quantity.setText("");
+                            sname.setText("");
+                            scontact.setText("");
                         }
                         else
                         {
                             Toast.makeText(item_list.this,"Data not inserted",Toast.LENGTH_LONG).show();
+                            pname.setText("");
+                            price.setText("");
+                            quantity.setText("");
+                            sname.setText("");
+                            scontact.setText("");
                         }
 
                     }

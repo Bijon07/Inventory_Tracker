@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="150dp"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#C60B0FFF"
             android:text="welcome to"
             android:textAlignment="center"
             android:textAllCaps="true"
