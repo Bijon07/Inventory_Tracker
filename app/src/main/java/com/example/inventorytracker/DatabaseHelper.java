@@ -2,6 +2,7 @@ package com.example.inventorytracker;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -20,7 +21,6 @@ public class DatabaseHelper extends SQLiteOpenHelper
     public DatabaseHelper(Context context)
     {
         super(context, Database_Name, null, 1);
-
     }
 
     @Override
@@ -53,6 +53,13 @@ public class DatabaseHelper extends SQLiteOpenHelper
             return  true;
     }
 
+    public Cursor viewData()
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from Product_List",null);
+        return cursor;
+    }
+
     public boolean updateData(String name, String price, String quantity,String supplier_name, String supplier_contact){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -63,5 +70,16 @@ public class DatabaseHelper extends SQLiteOpenHelper
         contentValues.put(Col_5,supplier_contact);
         db.update(Table_Name, contentValues,"Name = ?",new String[]{name}); //update
         return true;
+    }
+    public boolean deleteData(String name)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        long result = db.delete(Table_Name,"Name = ?", new String[] {name});
+        if(result==-1){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 }

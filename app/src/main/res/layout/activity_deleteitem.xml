@@ -40,10 +40,14 @@
             android:textSize="24dp" />
 
         <Button
+            android:id="@+id/delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/pname"
-            android:layout_margin="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
             android:width="200dp"
             android:height="60dp"
             android:text="delete from list"
